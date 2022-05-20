@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.site {
+    letter-spacing: 7px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 3px solid #B38551;
+    display: inline-block;
+    box-shadow: 0px 0px 18px rgba(17, 17, 17, 0.411);
+    position: absolute;
+    left: 26.5%;
+    top: 38%;
+}
+
+.site i {
+    color: #B38551;
+}
+
+.site span {
+    font-size: 40px;
+    color: #B38551;
+}
+
+.mainh {
+    color: #B38551;
+    display: inline-block;
+    margin: 175px;
+    position: relative;
+    z-index: 1;
+    font-weight: lighter;
+}
+
+.mainh::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: #B38551;
+    position: absolute;
+    left: -25%;
+    top: 50%;
+    z-index: -1;
+}
+
+.cot1 {
+    overflow: hidden;
+    margin-right: -15%;
+    height: 0px;
+    transition: height 1.5s ease;
+}
+
+.cot2 {
+    overflow: hidden;
+    margin-left: -10%;
+    height: 0px;
+    transition: height 3.5s ease;
+    transform-origin: left;
+}
+
+.mainh::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: #B38551;
+    position: absolute;
+    right: -25%;
+    top: 50%;
+    z-index: -1;
+}
+
+.project1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project1 h2 {
+    margin-top: 15%;
+    margin-right: -30%;
+    font-weight: lighter;
+    position: relative;
+}
+
+.trans {
+    height: 600px;
+}
+
+.project1 h2::before {
+    content: "";
+    height: 2px;
+    width: 135px;
+    position: absolute;
+    left: -150px;
+    top: 9%;
+    background-color: #B38551;
+    z-index: 55;
+}
+
+.project1 p {
+    color: #B38551;
+    font-family: raleway, sans-serif
+}
+
+.project1 img {
+    margin-right: -20%;
+    transition: transform .9s ease;
+}
+
+.project1 img:hover {
+    transform: scale(1.05555);
+    cursor: pointer;
+}
+
+.project2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 145px 0;
+}
+
+.project2 h2 {
+    position: relative;
+}
+
+.project2 h2::before {
+    content: "";
+    height: 2px;
+    width: 135px;
+    position: absolute;
+    right: -150px;
+    top: 9%;
+    background-color: #B38551;
+    z-index: 55;
+}
+
+.project2 img {
+    width: 900px;
+}
+
+.project2 h2 {
+    margin-top: 17%;
+    margin-left: -20%;
+    font-weight: lighter;
+}
+
+.project2 p {
+    color: #B38551;
+    font-family: raleway, sans-serif
+}
+
+.project2 img {
+    transition: transform .9s ease;
+    margin-right: -10%;
+}
+
+.project2 img:hover {
+    transform: scale(1.05555);
+    cursor: pointer;
+}
+
+.flexes {
+    display: flex;
+    justify-content: space-around;
+    margin: 195px auto;
+    width: 90%;
+    cursor: pointer;
+    transform: translateX(-180%);
+    transition: transform 1.5s ease;
+}
+
+.flexes div {
+    width: 499px;
+    height: 275px;
+    margin-right: 5px;
+}
+
+.flexes div:hover img {
+    transform: scale(1.05555);
+}
+
+.flexes img {
+    width: 499px;
+    height: 275px;
+    transition: transform .6s ease;
+}
+
+.pro1 h2,
+.pro2 h2,
+.pro3 h2 {
+    margin: 30px 0;
+    font-family: raleway, sans-serif;
+    letter-spacing: 3px;
+}
+
+.pro1 h2::before {
+    content: "VERNAY";
+    color: #B38551;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.pro2 h2::before {
+    content: "MADRID";
+    color: #B38551;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.pro3 h2::before {
+    content: "LOSANGELES";
+    color: #B38551;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.pro1 h2::after {
+    content: "2020";
+    color: #B38551;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.pro2 h2::after {
+    content: "2019";
+    color: #B38551;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.pro3 h2::after {
+    content: "2018";
+    color: #B38551;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.pro2 {
+    margin-top: -20px;
+}
+
+.cont {
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.trans1 {
+    transform: translateX(0);
+}
+
+.card {
+    width: 350px;
+    height: 0px;
+    box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.164);
+    border-radius: 6px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    transition: all .4s ease;
+    color: #111;
+    border: 2px dashed #B38551;
+}
+
+.height {
+    height: 370px;
+}
+
+.card .p1,
+.p2,
+.p3 {
+    margin-top: 50px;
+    margin-left: -10px;
+    width: 195px;
+    border-bottom: 1px dashed #B38551;
+    padding: 10px 0;
+    font-size: 17px;
+}
+
+.services {
+    margin-top: 25px;
+    font-weight: lighter;
+    color: #111;
+}
+
+.card .p1::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 15px;
+    color: #B38551;
+}
+
+.card .p2::before {
+    content: "\f274";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 15px;
+    color: #B38551;
+}
+
+.card .p3::before {
+    content: "\f53d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 17px;
+    color: #B38551;
+}
+
+.parallax {
+    margin: 400px auto;
+    height: 400px;
+    width: 800px;
+    background: url('main1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 10px;
+}
+
+.parallax .par {
+    background-color: rgba(17, 17, 17, 0.582);
+    text-align: center;
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 215px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.parallax .parh {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.parallax .parb {
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    background-color: #B38551;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.parallax .parb:hover {
+    background-color: #fff;
+    border: 2px solid #111;
+    color: #111;
+}
+
+.footer {
+    background-color: #1D1C1C;
+    width: 100%;
+    height: 0px;
+    font-family: 'Raleway', sans-serif;
+    color: #B38551;
+    position: relative;
+    transition: height 1.3s ease-in;
+}
+
+.footer .footh {
+    font-size: 28px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 25px;
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #B38551;
+    opacity: 0;
+}
+
+.footer .footh span {
+    color: #fff;
+    font-size: 32px;
+}
+
+.footbottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.footer .site1 {
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.footer span {
+    font-size: 40px;
+    color: #B38551;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.info p {
+    margin: 30px 40px;
+}
+
+.info p:first-child {
+    margin-top: 104px;
+}
+
+.info h2 {
+    margin: 30px 40px;
+}
+
+.info i {
+    color: #B38551;
+}
+
+.lang {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.lang p {
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.lang p:hover {
+    filter: brightness(52);
+}
+
+.map {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    border-radius: 14px;
+    opacity: 0;
+}
+
+.footerscale {
+    height: 450px;
+    transform-origin: top;
+}
+
+.footeropace {
+    opacity: 1;
+}
